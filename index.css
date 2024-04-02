@@ -17,7 +17,7 @@
 }
 
 html {
-  font-size: .625rem;
+  font-size: 0.625rem;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -30,29 +30,28 @@ body {
   color: var(--dark-purple);
 }
 
-h1{
+h1 {
   font-size: 3.4rem;
   line-height: 4rem;
 }
 
-h2{
+h2 {
   font-size: 1.7rem;
   line-height: 2.1rem;
-
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-p{
+p {
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: 400;
   color: var(--grayish-purple);
 }
 
-hr{
+hr {
   border: 1px solid var(--light-pink);
 }
 
@@ -91,42 +90,57 @@ hr{
   font-weight: var(--font-weight600);
 }
 
-.faq-item{
+.faq-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.faq-item:hover{
+.faq-item:hover {
   color: var(--bright-purple);
   cursor: var(--cursor);
 }
 
-.faq-item1{
+.faq-item1 {
   margin-top: 10px;
   display: none;
 }
 
-.faq-item2{
+.faq-item2 {
   margin-top: 10px;
   display: none;
 }
 
-.faq-item3{
+.faq-item3 {
   margin-top: 10px;
   display: none;
 }
 
-.faq-item4{
+.faq-item4 {
   margin-top: 10px;
   display: none;
 }
 
-.plus.icon{
+.plus.icon {
   cursor: var(--cursor);
 }
 
-.minus-icon{
+.minus-icon {
   display: none;
   cursor: var(--cursor);
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-size: inherit; /* Resize to cover on mobile */
+  }
+  .faq-container {
+    overflow-y: auto;
+    border-radius: 8px;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    height: 40%;
+    width: 90%;
+  }
 }

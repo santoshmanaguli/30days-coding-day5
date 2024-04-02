@@ -118,18 +118,18 @@
       listItem.forEach((point) => {
         point.addEventListener("click", function () {
           const subList = point.nextElementSibling;
-          if (subList.style.display == '') {
+          if (subList.style.display == "") {
             subList.style.display = "block";
-            point.children[1].style.display = 'none';
-            point.children[2].style.display = 'block';
+            point.children[1].style.display = "none";
+            point.children[2].style.display = "block";
           } else if (subList.style.display == "none") {
             subList.style.display = "block";
-            point.children[1].style.display = 'none';
-            point.children[2].style.display = 'block';
+            point.children[1].style.display = "none";
+            point.children[2].style.display = "block";
           } else {
             subList.style.display = "none";
-            point.children[2].style.display = 'none';
-            point.children[1].style.display = 'block';
+            point.children[2].style.display = "none";
+            point.children[1].style.display = "block";
           }
         });
       });
